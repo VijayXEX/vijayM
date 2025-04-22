@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Web Technology Course Portal</title>
+  <style>
+    /* CSS */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background: #f5f5f5;
+      color: #333;
+    }
+    header {
+      background: #2c3e50;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    nav {
+      margin-top: 15px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: #ecf0f1;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+      padding: 5px 10px;
+    }
+    nav a:hover {
+      color: #3498db;
+      background: rgba(255,255,255,0.1);
+      border-radius: 4px;
+    }
+    section {
+      padding: 25px;
+      background: #fff;
+      margin: 20px auto;
+      max-width: 900px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+    h2 {
+      color: #2c3e50;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 10px;
+      margin-top: 0;
+    }
+    .content-block {
+      margin-bottom: 40px;
+      padding: 20px;
+      background: #f9f9f9;
+      border-radius: 6px;
+    }
+    .content-block h3 {
+      color: #2980b9;
+      margin-top: 0;
+    }
+    .content-img {
+      max-width: 100%;
+      height: auto;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+      margin: 10px 0;
+    }
+    .content-img:hover {
+      transform: scale(1.02);
+    }
+    footer {
+      background: #2c3e50;
+      color: #ecf0f1;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+    pre {
+      background: #2c3e50;
+      color: #ecf0f1;
+      padding: 15px;
+      border-radius: 6px;
+      overflow-x: auto;
+    }
+    .lab-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .lab-item {
+      flex: 1 1 300px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Web Technology Course Portal</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#syllabus">Syllabus</a>
+      <a href="#lab">Lab Manual</a>
+      <a href="#examples">Examples</a>
+      <a href="#references">References</a>
+    </nav>
+  </header>
+
+  <section id="home">
+    <div class="content-block">
+      <h2>Course Overview</h2>
+      <p>Purpose of Web Technology<br><br>
+        
+1.Global Information Sharing<br>
+        
+
+Example: Wikipedia allows millions to access/update knowledge instantly.<br>
+
+Example: News websites deliver real-time updates worldwide.<br><br>
+
+2.Seamless Communication<br>
+
+Example: WhatsApp/Telegram for instant messaging; Zoom for video conferencing.<br>
+
+Example: Social media (Twitter, Facebook) connects people across borders.<br><br>
+
+3.E-Commerce & Business Growth<br>
+
+Example: Amazon/Flipkart enable online shopping with secure payments.<br>
+
+Example: Shopify lets small businesses create online stores easily.<br><br>
+
+4.Online Education (E-Learning)<br>
+
+Example: Coursera/Udemy offer courses with interactive quizzes and certificates.<br>
+
+Example: Google Classroom facilitates virtual classrooms for schools.<br><br>
+
+5.Entertainment & Media Streaming<br>
+
+Example: Netflix/Spotify stream movies/music on-demand.<br>
+
+Example: YouTube hosts user-generated content globally.<br><br>
+6.Automation & Efficiency<br>
+
+Example: Chatbots (like Zendesk) handle customer queries 24/7.<br>
+
+Example: Online banking automates transactions without branch visits.<br><br>
+
+7.Remote Work & Cloud Computing<br>
+
+Example: Google Drive/Dropbox store files accessible from any device.<br>
+
+Example: Slack/Trello enable team collaboration remotely.<br><br>
+
+8.Data Management & Analytics<br>
+
+Example: Firebase/MySQL manage large-scale databases for apps.<br>
+
+Example: Google Analytics tracks website traffic and user behavior.<br><br>
+
+9.Digital Marketing & Outreach<br>
+
+Example: SEO tools (Ahrefs) help businesses rank higher on Google.<br>
+
+Example: Facebook Ads target specific demographics for campaigns.<br><br>
+
+10.Healthcare & Telemedicine<br>
+
+Example: Practo allows online doctor consultations.<br>
+
+Example: Fitbit apps track health metrics in real-time.<br><br>
+Benefits of Web Technology<br><br>
+1.Cost Savings<br>
+
+Example: Cloud services (AWS) reduce hardware costs for startups.<br>
+
+Example: Email replaces postal mail, saving time and money.<br><br>
+
+2.Accessibility<br>
+
+Example: Screen readers (like NVDA) make websites usable for the visually impaired.<br>
+
+Example: Mobile-responsive designs work on phones/tablets.<br><br>
+
+3.Scalability<br>
+
+Example: Netflix scales server capacity during peak streaming hours.<br>
+
+Example: WordPress handles traffic spikes for blogs.<br><br>
+4.Security<br>
+
+Example: HTTPS encryption protects sensitive data (credit cards).<br>
+
+Example: Two-factor authentication (2FA) on Gmail enhances security.<br><br>
+
+5.Innovation<br>
+
+Example: AI chatbots (ChatGPT) improve customer service.<br>
+
+Example: WebGL enables 3D graphics in browsers (e.g., Google Maps).<br><br>
+
+6.Environmental Impact<br>
+
+Example: Digital documents reduce paper waste (e.g., e-tickets).<br>
+
+Example: Remote work cuts down on commuting emissions.<br><br>
+7.User Convenience<br>
+
+Example: Food delivery apps (Swiggy) order meals with one click.<br>
+
+Example: Google Maps provides real-time navigation.<br><br>
+
+
+</p>
+    </div>
+  </section>
+
+  <section id="syllabus">
+    <h2>Course Syllabus</h2>
+    
+    <div class="content-block">
+      <h3>Unit 1: Introduction to HTML & CSS</h3>
+      <img src="https://i.postimg.cc/HxPSXPtH/1st-unit-syl.png" 
+           alt="HTML/CSS Syllabus" 
+           class="content-img">
+    </div>
+    
+    <div class="content-block">
+      <h3>Unit 2: XML Technologies</h3>
+      <img src="https://i.postimg.cc/gj4mdpyd/2-nd-unit-syl.png" 
+           alt="XML Syllabus" 
+           class="content-img">
+    </div>
+    
+    <div class="content-block">
+      <h3>Unit 3: Perl Programming</h3>
+      <img src="https://i.postimg.cc/4NzFYPj7/3-rd-unit.png" 
+           alt="Perl Syllabus" 
+           class="content-img">
+    </div>
+    
+    <div class="content-block">
+      <h3>Unit 4: PHP & MySQL</h3>
+      <img src="https://i.postimg.cc/QCBZL7Mg/4-th-unit.png" 
+           alt="PHP/MySQL Syllabus" 
+           class="content-img">
+    </div>
+    
+    <div class="content-block">
+      <h3>Unit 5: Rails & AJAX</h3>
+      <img src="https://i.postimg.cc/c1VLx1N1/5-TH-UNIT.png" 
+           alt="Rails/AJAX Syllabus" 
+           class="content-img">
+    </div>
+  </section>
+
+  <section id="lab">
+    <h2>Lab Manual</h2>
+    
+    <div class="content-block">
+      <div class="lab-list">
+        <div class="lab-item">
+          <img src="https://i.postimg.cc/yYms7FPn/lm.png" 
+               alt="Lab Manual Part 1" 
+               class="content-img">
+        </div>
+        <div class="lab-item">
+          <img src="https://i.postimg.cc/MpskGtj0/lm-2.png" 
+               alt="Lab Manual Part 2" 
+               class="content-img">
+        </div>
+      </div>
+    </div>
+  </section>
+  <p> Example 1:HTML5 Form Validation</p>
+  <div class="content-block">
+  <h3>HTML5 Form Validation</h3>
+  <form id="registerForm">
+    <label for="email">Email:</label>
+    <input type="email" id="email" required 
+           placeholder="Enter valid email">
+    
+    <label for="pass">Password (8+ chars):</label>
+    <input type="password" id="pass" required
+           minlength="8" pattern="^(?=.*\d).{8,}$">
+    
+    <label for="age">Age:</label>
+    <input type="number" id="age" min="18" max="100">
+    
+    <button type="submit">Register</button>
+  </form>
+  <script>
+    document.getElementById('registerForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+      alert('Form validated successfully!');
+    });
+  </script>
+</div>
+  
+  <p>Example 2: CSS Grid Layout</p>
+  
+  <div class="content-block">
+  <h3>CSS Grid Layout</h3>
+  <div class="grid-example">
+    <div class="header">Header</div>
+    <div class="sidebar">Sidebar</div>
+    <div class="main">Main Content</div>
+    <div class="footer">Footer</div>
+  </div>
+  <style>
+    .grid-example {
+      display: grid;
+      grid-template: 
+        "header header" 80px
+        "sidebar main" 200px
+        "footer footer" 50px / 150px 1fr;
+      gap: 10px;
+    }
+    .header { grid-area: header; background: #3498db; }
+    .sidebar { grid-area: sidebar; background: #2ecc71; }
+    .main { grid-area: main; background: #e74c3c; }
+    .footer { grid-area: footer; background: #f39c12; }
+  </style>
+</div>
+  <p> Example 3:JavaScript DOM Manipulation</p>
+  <div class="content-block">
+  <h3>DOM Manipulation</h3>
+  <button id="colorBtn">Change Colors</button>
+  <div id="colorBox" style="width:100px;height:100px;background:#ccc;margin:10px 0;"></div>
+  <script>
+    document.getElementById('colorBtn').addEventListener('click', () => {
+      const box = document.getElementById('colorBox');
+      box.style.background = hsl(${Math.random()*360}, 70%, 50%);
+      box.textContent = box.style.background;
+    });
+  </script>
+</div>
+  
+  
+  <section id="references">
+    <h2>References</h2>
+    <div class="content-block">
+      <ul>
+        <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
+        <li><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a></li>
+        <li><a href="https://www.php.net/manual/en/" target="_blank">PHP Documentation</a></li>
+        <li><a href="https://perldoc.perl.org/" target="_blank">Perl Documentation</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Web Technology Course | Department of ECE | Vijay</p>
+  </footer>
+</body>
+</html>
